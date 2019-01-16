@@ -3,9 +3,10 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       base_url:  'http://tt.int'
+      browser_name: chrome
       goutte:    ~
       selenium2:
-        browser: firefox
+        browser: chrome
         wd_host: http://127.0.0.1:4444/wd/hub
         capabilities:
           version: ''
