@@ -2,6 +2,11 @@
 default:
   extensions:
     Behat\MinkExtension\Extension:
-      base_url:  'http://int.user'
+      base_url:  'http://localhost:3000'
+      browser_name: chrome
       goutte:    ~
-      selenium2: ~
+      selenium2:
+        browser: chrome
+        wd_host: http://127.0.0.1:4444/wd/hub
+        capabilities:
+          version: ''
