@@ -38,7 +38,7 @@ class FeatureContext extends MinkContext
     {
         PHPUnit_Framework_Assert::assertSame(
             $arg1,
-            'Wrong Username Or Password'
+            $this->getSession()->getDriver()->getWebDriverSession()->getAlert_text()
         );
         $this->getSession()->getDriver()->getWebDriverSession()->accept_alert();
     }
