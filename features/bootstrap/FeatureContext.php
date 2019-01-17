@@ -32,12 +32,13 @@ class FeatureContext extends MinkContext
     }
 
     /**
-     * @Then /^I should see a Toastr with "([^"]*)"$/
+     * @Given /^I wait sometime$/
      */
-    public function iShouldSeeAToastrWith($arg1)
+    public function iWaitSometime()
     {
-        throw new PendingException();
+        $this->getSession()->wait(2000);
     }
+
 
 
 }
