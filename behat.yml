@@ -2,7 +2,7 @@
 default:
   extensions:
     Behat\MinkExtension\Extension:
-      base_url:  'http://dev.crm/'
+      base_url:  'http://dev.crm'
       browser_name: chrome
       goutte:    ~
       selenium2:
