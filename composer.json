@@ -9,7 +9,6 @@
     "facebook/webdriver": "dev-master",
     "guzzlehttp/guzzle": "~6.0"
   },
-  "minimum-stability": "dev",
   "config": {
     "bin-dir": "bin/"
   },
